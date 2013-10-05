@@ -2,8 +2,8 @@
 
 JSOND stands for (JSON Declarations).  It is a declarative language which is a subset of JSON.  Rather than representing objects, JSOND represents logical declarations. For example, the following condition:
 
-    if ((a==b) || (c>d)) && e!=f) {
-      g=h;
+    if ((a=="b") || (c>d)) && e!="f") {
+      g="h";
     }
 
 can be represented as
@@ -11,15 +11,17 @@ can be represented as
     "if": [
       "and": [
         "or": [
-          "eq": ["a", "b"],
-          "gt": ["c", "d"]
+          "eq": ["$a", "b"],
+          "gt": ["$c", d]
         ],
         "not": {
-          "eq": ["e", "f"]
+          "eq": ["$e", "f"]
         }
       ],
-      set: [g, h]
+      "set": ["$g", "h"]
     ]
+    
+Arrays are used to pass paramaters.  the assignment `"set": ["$g", "h"]` means set the variable g to the string value "h".  
 
 ## Why is this useful?
 
