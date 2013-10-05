@@ -1,4 +1,4 @@
-#JSOND
+#JSOND (Working Draft)
 
 JSOND stands for (JSON Declarations).  It is a declarative language which is a subset of JSON.  Rather than representing objects, JSOND represents logical declarations. For example, the following condition:
 
