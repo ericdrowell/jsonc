@@ -2,22 +2,22 @@
 
 JSOND stands for (JSON Declarations).  It is a superset of JSON.  Rather than representing objects, JSOND represents logical declarations. For example, the following condition:
 
-`if ((a==b) || (c>d) && e!=f) {
-  g=h;
-}`
+    if ((a==b) || (c>d) && e!=f) {
+      g=h;
+    }
 
 can be represented as
 
-`"if": [
-  "and": [
-    "or": [
-      "eq": ["a", "b"],
-      "gt": ["c", "d"]
-    ],
-    "ne": ["e", "f"]
-  ],
-  set: [g, h]
-]`
+    "if": [
+      "and": [
+        "or": [
+          "eq": ["a", "b"],
+          "gt": ["c", "d"]
+        ],
+        "ne": ["e", "f"]
+     ],
+     set: [g, h]
+    ]
 
 ## Why is this useful?
 
