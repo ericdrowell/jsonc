@@ -2,8 +2,8 @@
 
 JSOND stands for "JSON Declarations".  It is a declarative language which is a subset of JSON.  Rather than representing objects, JSOND represents logical declarations. For example, the following condition:
 
-    if (((a=="b") || (c>d)) && e!="f") {
-      g="h";
+    if (((a=='b') || (c>5)) && e!='f') {
+      return 'done';
     }
 
 can be represented as
