@@ -20,7 +20,7 @@ can be represented as
         {"ret": ["done"]}
       ]};
     
-Declarations are wrapped inside obect literals.  Arrays are used to pass paramaters.  For example, the declaration `"eq": ["$g", "h"]` means return true if the variable g equals the string "h".  
+Declarations are wrapped inside obect literals.  Arrays are used to pass paramaters.  For example, the declaration `{"eq": ["$g", "h"]}` means return true if the variable g equals the string "h".  
 
 ## How is this useful?
 
