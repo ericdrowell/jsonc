@@ -8,18 +8,17 @@ JSOND stands for "JSON Declarations".  It is a declarative language which is a s
 
 can be represented as
 
-    "if": [
-      "and": [
-        "or": [
-          "eq": ["$a", "b"],
-          "gt": ["$c", d]
-        ],
-        "not": {
-          "eq": ["$e", "f"]
-        }
-      ],
-      "set": ["$g", "h"]
-    ]
+    var logic = 
+      {"if": [
+        {"and": [
+          {"or": [
+            {"eq": ["$a", "b"]},
+            {"gt": ["$c", 5]}
+          ]}, 
+          {"not": {"eq": ["$e", "f"]}}
+        ]},
+        {"set": ["$g", "h"]}
+      ]};
     
 Arrays are used to pass paramaters.  the assignment `"set": ["$g", "h"]` means set the variable g to the string value "h".  
 
