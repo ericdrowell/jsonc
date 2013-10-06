@@ -22,7 +22,7 @@ can be represented as
     
 Arrays are used to pass paramaters.  the assignment `"set": ["$g", "h"]` means set the variable g to the string value "h".  
 
-## Why is this useful?
+## How is this useful?
 
 * JSOND enables computer scientists to write logic with a standard syntax that can be compiled or interpreted in any language.  This means that you can write logic in JSOND, and execute it in JavaScript, PHP, Java, Scala, Ruby, or whatever.  The JSOND project outlines the specification and will eventually support compilers and interpreters for every major language on the planet.  
 * You can change logic on the fly before interpreting it
