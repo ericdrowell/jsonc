@@ -1,0 +1,35 @@
+<html>
+<head></head>
+<body>
+  test
+  <script src="../src/jsond.js"></script>
+  <script>
+    // if (((a=="b") || (c>5)) && e!="f") {
+    //   g="h";
+    // }
+
+    var logic = 
+      {"if": [
+        {"and": [
+          {"or": [
+            {"eq": ["$a", "b"]},
+            {"gt": ["$c", 5]}
+          ]}, 
+          {"not": {"eq": ["$e", "f"]}}
+        ]},
+        {"ret": true},
+        {"ret": false},
+      ]};
+
+    var params = {
+      a: 'foo',
+      c: 6,
+      e: 'bar'
+    };
+
+    var g = jsond(logic, params);
+
+    
+  </script>
+</body>
+</html>
