@@ -20,7 +20,7 @@ can be represented as
         {"ret": ["done"]}
       ]};
     
-Arrays are used to pass paramaters.  the assignment `"set": ["$g", "h"]` means set the variable g to the string value "h".  
+Declarations are wrapped inside obect literals.  Arrays are used to pass paramaters.  For example, the declaration `"eq": ["$g", "h"]` means return true if the variable g equals the string "h".  
 
 ## How is this useful?
 
