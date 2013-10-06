@@ -8,24 +8,25 @@ JSOND stands for "JSON Declarations".  It is a declarative language which is a s
 
 can be represented as
 
-    "if": [
-      "and": [
-        "or": [
-          "eq": ["$a", "b"],
-          "gt": ["$c", d]
-        ],
-        "not": {
-          "eq": ["$e", "f"]
-        }
-      ],
-      "set": ["$g", "h"]
-    ]
+    var logic = 
+      {"if": [
+        {"and": [
+          {"or": [
+            {"eq": ["$a", "b"]},
+            {"gt": ["$c", 5]}
+          ]}, 
+          {"not": {"eq": ["$e", "f"]}}
+        ]},
+        {"set": ["$g", "h"]}
+      ]};
     
 Arrays are used to pass paramaters.  the assignment `"set": ["$g", "h"]` means set the variable g to the string value "h".  
 
 ## Why is this useful?
 
 JSOND enables computer scientists to write logic with a standard syntax that can be compiled or interpreted in any language.  This means that you can write logic in JSOND, and execute it in JavaScript, PHP, Java, Scala, Ruby, or whatever.  The JSOND project outlines the specification and will eventually support compilers and interpreters for every major language on the planet.
+
+Representing logic as JSON opens up lots of other interesting possibilities as well.  If logic is represented as JSON, this means that you could change the logic on the fly before interpreting it.  You could also dynamically build logic at run time.
 
 ## Full list of declarations
 
