@@ -24,7 +24,7 @@ Declarations are wrapped inside obect literals.  Arrays are used to pass paramat
 
 ## How is this useful?
 
-* You can write logic with a standard syntax that can be interpreted in any language.  This means that you can write logic in JSOND, and execute it in JavaScript, PHP, Java, Scala, Ruby, or whatever.  The JSOND project outlines the specification and will eventually support compilers and interpreters for every major language on the planet.  
+* JSOND logic can be interpreted in any language.  This means that you can write logic in JSOND, and execute it in JavaScript, PHP, Java, Scala, Ruby, or whatever.  The JSOND project outlines the specification and will eventually support interpreters for every major language on the planet.  
 * You can change logic on the fly before interpreting it
 * You can dynamically build logic at run time
 * You can serialize and deserialize logic safely (I'm looking at you, eval)
