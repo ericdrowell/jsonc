@@ -29,6 +29,7 @@ Arrays are used to pass paramaters.  the assignment `"set": ["$g", "h"]` means s
 * You can dynamically build logic at run time
 * You can serialize and deserialize logic safely (I'm looking at you, eval)
 * You can make logic changes without redeploying your application
+* It makes the process of migrating from one language to another much easier
 
 ## Full list of declarations
 
