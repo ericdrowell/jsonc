@@ -8,7 +8,23 @@
     //   g="h";
     // }
 
-    var logic = 
+
+
+    var simple1 = 
+      {"if": [
+        {"eq": [1, 1]},
+        {"ret": [true]},
+        {"ret": [false]},
+      ]};
+
+    var simple2 = 
+      {"if": [
+        {"eq": ["$a", 1]},
+        {"ret": [true]},
+        {"ret": [false]},
+      ]};
+
+    var advanced = 
       {"if": [
         {"and": [
           {"or": [
@@ -17,17 +33,20 @@
           ]}, 
           {"not": {"eq": ["$e", "f"]}}
         ]},
-        {"ret": true},
-        {"ret": false},
+        {"ret": [true]},
+        {"ret": [false]},
       ]};
 
+
     var params = {
-      a: 'foo',
+      a: 1,
       c: 6,
       e: 'bar'
     };
 
-    var g = jsond(logic, params);
+    var g = jsond(simple2, params);
+
+    console.log(g);
 
     
   </script>

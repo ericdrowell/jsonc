@@ -17,7 +17,7 @@ can be represented as
           ]}, 
           {"not": {"eq": ["$e", "f"]}}
         ]},
-        {"set": ["$g", "h"]}
+        {"ret": ["done"]}
       ]};
     
 Arrays are used to pass paramaters.  the assignment `"set": ["$g", "h"]` means set the variable g to the string value "h".  
