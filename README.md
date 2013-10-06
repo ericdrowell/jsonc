@@ -25,7 +25,7 @@ Arrays are used to pass paramaters.  the assignment `"set": ["$g", "h"]` means s
 
 ## Why is this useful?
 
-JSOND enables computer scientists to write logic with a standard syntax that can be compiled and executed in any language.  This means that you can write logic in JSOND, and execute it in JavaScript, PHP, Java, Scala, Ruby, or whatever.  The JSOND project outlines the specification and will eventually support compilers for every major language on the planet.
+JSOND enables computer scientists to write logic with a standard syntax that can be compiled or interpreted in any language.  This means that you can write logic in JSOND, and execute it in JavaScript, PHP, Java, Scala, Ruby, or whatever.  The JSOND project outlines the specification and will eventually support compilers and interpreters for every major language on the planet.
 
 ## Full list of declarations
 
