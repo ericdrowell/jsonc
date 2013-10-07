@@ -53,7 +53,13 @@ Declarations are wrapped inside obect literals.  Arrays are used to pass paramat
 | sub            | return A - B                                    | N           |
 | div            | return A / B                                    | N           |
 | mod            | return A % B                                    | N           |
-| **Return**     
+| **Arrays**     
+| push           | push B onto A                                   | 2           |
+| pop            | pop A                                           | 1           |
+| ins            | insert B into A at position C                   | 3           |
+| rm             | remove item with index B from A                 | 2           |
+| **Other**     
+| exe            | execute A, then B                               | N           |
 | ret            | return A                                        | 1           |
 
 
