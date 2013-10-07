@@ -1,6 +1,6 @@
-#JSOND (Working Draft)
+#JSONC (Working Draft)
 
-JSOND stands for "JSON Declarations".  It is a declarative language which is a subset of JSON.  Rather than representing objects, JSOND represents logical declarations. For example, the following condition:
+JSONC stands for "JSON Commands".  It is an imperative language which is a subset of JSON.  Rather than representing objects, JSONC represents commands. For example, the following condition:
 
     if (((a=='b') || (c>5)) && e!='f') {
       return 'done';
@@ -20,18 +20,18 @@ can be represented as
         {"ret": ["done"]}
       ]};
     
-Declarations are wrapped inside obect literals.  Arrays are used to pass paramaters.  For example, the declaration `{"eq": ["$g", "h"]}` means return true if the variable g equals the string "h".  
+Commands are wrapped inside obect literals.  Arrays are used to pass paramaters.  For example, the command `{"eq": ["$g", "h"]}` means return true if the variable g equals the string "h".  
 
 ## How is this useful?
 
-* JSOND logic can be interpreted in any language.  This means that you can write logic in JSOND, and execute it in JavaScript, PHP, Java, Scala, Ruby, or whatever.  The JSOND project outlines the specification and will eventually support interpreters for every major language on the planet.  
+* JSONC logic can be interpreted in any language.  This means that you can write logic in JSONC, and execute it in JavaScript, PHP, Java, Scala, Ruby, or whatever.  The JSONC project outlines the specification and will eventually support interpreters for every major language on the planet.  
 * You can change logic on the fly before interpreting it
 * You can dynamically build logic at run time
 * You can serialize and deserialize logic safely (I'm looking at you, eval)
 * You can make logic changes without redeploying your application
 * It makes the process of migrating from one language to another much easier
 
-## Full list of declarations
+## Full list of commands
 
 | Type           | Usage                                           | # Paramters |
 | ---------------|-------------------------------------------------|-------------|
